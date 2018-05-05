@@ -1,0 +1,131 @@
+.merchant-check-page {
+    .merchant-check-info {
+        padding: 0 10px;
+        border-bottom: 1px solid $gray-light-border-color;
+    }
+    .nick, .apply-time, .apply-status, .apply-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .nick-label, .time-label, .status-label, .content-label {
+        width: 32%;
+        color: $gray-text-color;
+    }
+    .nick-name, .time-text, .status-text, .content-info {
+        flex: 3;
+    }
+    .reload-more {
+        flex: 1;
+        .iconfont {
+            line-height: 0.64rem;
+            float: right;
+        }
+    }
+    .content-info {
+        width: 70%;
+    }
+
+
+    .nick {
+        line-height: 0.64rem;
+    }
+    .apply-time, .apply-status {
+        line-height: 0.52rem;
+    }
+    .content-info {
+        line-height: 0.4rem;
+        margin-bottom: 0;
+    }
+    .apply-content, .reload-more {
+        color: $gray-text-color;
+    }
+    .nick-name, .time-text, .status-text {
+        color: $black-text-color;
+    }
+    .merchant-check-info {
+        font-size: 0.20rem;
+    }
+    .nick, .apply-status {
+        border-bottom: 1px solid $gray-light-border-color;
+    }
+
+
+    // 流程和动态区域
+    .check-state-tab {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 0.28rem;
+        line-height: 0.68rem;
+        color: $gray-text-color;
+        box-shadow: 0 2px 2px $black-background-color;
+        .tab-item {
+            padding: 0 0.2rem;
+        }
+        .tab-item:hover {
+            cursor: pointer;
+        }
+        .selectedTab {
+            color: $black-text-color;
+            border-bottom: 3px solid $black-text-color;
+        }
+    }
+
+    .check-process-content {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 0.8rem;
+        .process-step {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 0.2rem;
+            color: $gray-text-light-color;
+        }
+        .process-step:not(:last-child) {
+            .step-circle::after {
+                position: relative;
+                left: calc(50% - 1px);
+                z-index: 99;
+                content: '';
+                font-size: 0;
+                line-height: 0;
+                overflow: hidden;
+                display: block;
+                width: 3px;
+                height: 0.8rem;
+                background-color: $gray-light-background-color;
+            }
+        }
+        .step-circle {
+            position: relative;
+            z-index: 100;
+            margin-right: 0.8rem;
+            width: 0.4rem;
+            line-height: 0.4rem;
+            height: 0.4rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            background-color: $gray-light-background-color;
+            color: $gray-text-color
+        }
+        .step-text {
+            flex: 1;
+        }
+        .currentStep {
+            .step-circle {
+                background-color: $black-light-background-color;
+                color: $black-text-color;
+            }
+            .step-circle::after {
+                background-color: $black-light-background-color !important;
+            }
+            .step-text {
+                color: $black-light-text-color;
+            }
+        }
+    }
+}

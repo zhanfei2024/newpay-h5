@@ -1,0 +1,62 @@
+  .action-page {
+    height: 100%;
+    background-color: $gray-background-color;
+  }
+  .action-page-wrapper {
+    padding: 10px;
+  }
+  .action-item {
+    margin-bottom: 10px;
+    background-color: $white-background-color;
+  }
+  .action-item:first-child {
+    margin-top: 0;
+  }
+  .action-title, .action-content {
+    padding: 10px;
+  }
+  .action-title {
+    display: flex;
+    flex-direction: row;
+    line-height: 0.38rem;
+    color: #505050;
+    border-bottom: 1px solid $gray-background-color;
+    .iconfont {
+      width: 10%;
+    }
+    .nick-name {
+      margin-right: 0.16rem;
+    }
+    .user-info, .commit-title {
+      flex: 1;
+    }
+    .commit-title  {
+      text-align: right;
+    }
+  }
+  .action-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .commit-title:hover {
+    cursor: pointer;
+  }
+
+  .title-content {
+    line-height: 24px;
+  }
+  .action-content {
+    width: 80%;
+    color: $gray-text-color;
+  }
+  .apply-time {
+    float: right;
+  }
+  .merchant-name, .merchant-info {
+    line-height: 0.47rem;
+  }
+  .merchant-info {
+    font-size: 12px;
+  }

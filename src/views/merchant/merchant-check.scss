@@ -1,0 +1,86 @@
+.check-content {
+    .more-title {
+        font-size: 0.2rem;
+        font-weight: 700;
+        line-height: 0.47rem;
+        height: 0.47rem;
+        padding-left: 0.16rem;
+        color: $black-light-text-color;
+        background-color: $gray-background-color;
+        border-top: 2px solid $gray-light-border-color;
+        border-bottom: 1px solid $gray-light-border-color;
+    }
+    .border-bottom {
+        border-bottom: 1px solid $gray-light-border-color;
+    }
+    .line-height-40 {
+        line-height: 0.62rem;
+        height: 0.62rem;
+    }
+    .item {
+        display: flex;
+        flex-direction: row;
+        .label {
+            padding: 0 0.16rem;
+            font-size: 0.2rem;
+            width: 32%;
+            color: $gray-text-color;
+            text-align: left;
+            line-height: 0.47rem;
+        }
+        .content {
+            padding-right: 0.16rem;
+            flex: 1;
+            font-size: 0.2rem;
+            line-height: 0.47rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .item-border {
+        font-size: 0.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray-light-border-color;
+        line-height: 0.62rem;
+        height: 0.62rem;
+        .label {
+            padding: 0 0.16rem;
+            color: $gray-text-color;
+            text-align: left;
+            line-height: 0.62rem;
+        }
+        .iconfont {
+            line-height: 0.62rem;
+            color: $gray-text-color;
+        }
+    }
+    .item-border:last-child {
+        border-bottom: 1px solid transparent;  
+    }
+    .protocol {
+        margin-bottom: 0.93rem;
+    }
+}
+
+.merchant-check-footer {
+    padding: 0.16rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid $gray-light-border-color;
+    background-color: $white-background-color;
+    font-size: 0.20rem;
+    color: $black-text-color;
+    line-height: 0.58rem;
+    .check-line {
+        width: 1px;
+        height: 0.58rem;
+        background-color: $gray-light-border-color;
+    }
+}

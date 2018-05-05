@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>扫码付运营管理</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <!-- x5内核浏览器(微信,QQ浏览器)强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+
+  <!-- 去掉移动web页面自动探测电话号码 -->
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-rim-auto-match" content="none">
+
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"> -->
+  <!-- 引入material字体图标 -->
+  <link rel="stylesheet" href="//fonts.lug.ustc.edu.cn/icon?family=Material+Icons">
+  <link rel="stylesheet" href="libs/mint-ui/mint-ui.min.css">
+  <!-- <link rel="stylesheet" href="assets/sprite.css"> -->
+  <script src="libs/vue/vue.min.js" charset="utf-8"></script>
+  <script src="libs/vue/vue-router.min.js" charset="utf-8"></script>
+  <script src="libs/vue/vue-resource.min.js" charset="utf-8"></script>
+  <!--自动注册 vue http -->
+  <script src="libs/vue/vuex.min.js" charset="utf-8"></script>
+  <!--自动注册 vue store -->
+  <script src="libs/mint-ui/mint-ui.min.js" charset="utf-8"></script>
+  <script src="libs/util.js" charset="utf-8"></script>
+  <script src="https://cdn.bootcss.com/moment.js/2.20.1/moment.min.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    (function flexible(window, document) {
+      function setRemUnit() {
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 640) deviceWidth = 640;
+        document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
+      }
+      setRemUnit()
+      // reset rem unit on page resize
+      window.addEventListener('resize', setRemUnit)
+    }(window, document))
+  </script>
+</body>
+
+</html>
